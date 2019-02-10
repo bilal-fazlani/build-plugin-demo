@@ -25,14 +25,14 @@ namespace CodeAnalyser
         {            
             int errors = 0;
             
-            foreach (var file in FileFinder.GetCsFiles(Directory.GetCurrentDirectory()))
+            foreach (var file in FileFinder.GetSourceFiles(Directory.GetCurrentDirectory()))
             {
                 if(file.LineCount > _lineThreshold)
                 {
                     errors += 1;
                     Console.WriteLine(file, Color.Red);
                 }
-                else if(_verbose) Console.WriteLine(file);
+                else if(_verbose) Console.WriteLine(file, Color.DarkGray);
             }
 
             if (errors > 0)
@@ -42,7 +42,7 @@ namespace CodeAnalyser
             }
             else
             {
-                Console.WriteLine("\nAnalysis completed successfully");
+                Console.WriteLine("\nAnalysis completed successfully", Color.LimeGreen);
             }
         }
     }

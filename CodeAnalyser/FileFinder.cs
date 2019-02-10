@@ -6,7 +6,7 @@ namespace CodeAnalyser
 {
     public static class FileFinder
     {        
-        public static IEnumerable<SourceFile> GetCsFiles(string path)
+        public static IEnumerable<SourceFile> GetSourceFiles(string path)
         {
             if (!IsExcluded(path))
             {
@@ -18,9 +18,9 @@ namespace CodeAnalyser
 
                 foreach (var directoryName in Directory.EnumerateDirectories(path))
                 {
-                    foreach (var fileName in GetCsFiles(directoryName))
+                    foreach (var file in GetSourceFiles(directoryName))
                     {
-                        yield return fileName;
+                        yield return file;
                     }
                 }
             }
