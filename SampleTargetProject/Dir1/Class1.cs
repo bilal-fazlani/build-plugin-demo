@@ -1,4 +1,4 @@
-namespace Demo.Dir1
+namespace SampleTargetProject.Dir1
 {
     public class Class1
     {

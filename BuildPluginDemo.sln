@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAnalyser", "CodeAnalyser\CodeAnalyser.csproj", "{0D689FA4-F5F8-4882-AA8E-EAA03191813A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{369DBBEF-FCC4-47C4-BFE6-AB638F3E1DFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTargetProject", "SampleTargetProject\SampleTargetProject.csproj", "{369DBBEF-FCC4-47C4-BFE6-AB638F3E1DFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

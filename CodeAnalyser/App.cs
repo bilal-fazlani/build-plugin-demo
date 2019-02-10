@@ -11,7 +11,8 @@ namespace CodeAnalyser
         private readonly int _lineThreshold;
         private readonly bool _verbose;
 
-        public App([Option(ShortName = "l")]int lineThreshold = 10, bool verbose = false)
+        public App([Option(ShortName = "l", LongName = "line-threshold", Description = "analysis will report error if a file has more number of lines than this value")]int lineThreshold = 10, [Option(
+            Description = "shows all files with their number of lines")]bool verbose = false)
         {
             _lineThreshold = lineThreshold;
             _verbose = verbose;
