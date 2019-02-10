@@ -6,6 +6,8 @@ using Console = Colorful.Console;
 
 namespace CodeAnalyser
 {
+    [ApplicationMetadata(Name = "analyse-code", Description = "reads the number of lines for every source file and breaks the build" +
+                                                              " if they are more than the threshold value")]
     class App
     {
         private readonly int _lineThreshold;
